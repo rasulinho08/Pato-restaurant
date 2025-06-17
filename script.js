@@ -26,3 +26,7 @@ buttons.forEach(button => {
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 978c49ccd23e35f47752e15b1c39366337eb449e
