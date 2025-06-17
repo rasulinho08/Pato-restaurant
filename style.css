@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 * {
     margin: 0;
     padding: 0;
@@ -939,7 +939,7 @@ header {
 
 
 
-.sign_text {
+/* .sign_text {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -972,6 +972,109 @@ header {
     border: 2px solid #9c9999;
 
 }
+ */
+
+
+
+/* Styles for the Sign Section */
+.sign {
+background-image: url(https://preview.colorlib.com/theme/pato/images/icons/pattern1.png.webp);
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sign_text {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sign_text span {
+    display: block;
+    font-family: 'Courgette', cursive;
+    font-size: 1.5rem;
+    color: #e65540;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.sign_text label {
+    display: block;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.sign_text input[type="email"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 40px 12px 15px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.sign_text input[type="email"]:focus {
+    border-color: #e65540;
+}
+
+.sign_text input[type="email"]::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.sign_icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #e65540;
+    font-size: 1.2rem;
+}
+
+.sign_text button {
+    background-color: #e65540;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sign_text button:hover {
+    background-color: #c74433;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .sign {
+        padding: 30px 15px;
+    }
+
+    .sign_text span {
+        font-size: 1.2rem;
+    }
+
+    .sign_text input[type="email"] {
+        max-width: 100%;
+    }
+
+    .sign_text button {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
 
 
 .infomenu h2 {
@@ -3232,5 +3335,14 @@ padding-left: 18%;
   text-align: center;
 }
 
+        #videoContainer {
+            display: none;
+            margin: 20px auto;
+            text-align: center;
+        }
+        .time .day {
+            display: inline-block;
+            margin: 0 10px;
+            text-align: center;
+        }
 
->>>>>>> 978c49ccd23e35f47752e15b1c39366337eb449e
