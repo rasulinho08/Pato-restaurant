@@ -126,15 +126,29 @@
         </div>
     </section>
 
-    <section class="info2">
-        <div class="words1">
-            <span class="discover1">Discover</span>
-            <h2 class="pato1">PATO PLACE</h2>
-            <div class="play"><i class="fa-solid fa-play"></i></div>
-        </div>
-    </section>
 
 
+
+
+
+  <section class="info2">
+    <div class="words1">
+      <span class="discover1">Discover</span>
+      <h2 class="pato1">PATO PLACE</h2>
+
+
+      <div class="play" onclick="showVideo()">
+        <i class="fa-solid fa-play"></i>
+      </div>
+    </div>
+
+
+    <div id="videoContainer">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/16nZ6K7sim4?autoplay=1" title="YouTube video"
+        frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+      </iframe>
+    </div>
+  </section>
 
 
 
@@ -436,7 +450,12 @@
                 el: ".swiper-pagination",
             },
         });
-    </script>
+
+    function showVideo() {
+      document.getElementById("videoContainer").style.display = "block";
+    }
+  </script>
+
 </body>
 
 </html>
