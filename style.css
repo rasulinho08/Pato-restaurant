@@ -1718,7 +1718,8 @@ padding-left: 18%;
   text-align: center;
 }
 
-=======
+
+
 * {
     margin: 0;
     padding: 0;
@@ -1726,7 +1727,7 @@ padding-left: 18%;
     text-decoration: none;
     list-style: none;
     font-family: "Montserrat", sans-serif;
-}
+} */
 
 header {
     display: flex;
@@ -3068,7 +3069,7 @@ p {
     font-size: 1rem;
     cursor: pointer;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .gallerybuttons button:hover,

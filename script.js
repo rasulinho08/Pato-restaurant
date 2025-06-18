@@ -3,7 +3,6 @@ const photos = document.querySelectorAll('.galleryphotos > div');
 
 buttons.forEach(button => {
   button.addEventListener('click', () => {
-    // Remove active class on buttons
     buttons.forEach(btn => btn.classList.remove('active'));
     button.classList.add('active');
 
@@ -25,8 +24,3 @@ buttons.forEach(button => {
 
 
 
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 978c49ccd23e35f47752e15b1c39366337eb449e

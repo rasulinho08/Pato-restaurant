@@ -290,7 +290,7 @@
             <label for="email-signup">
                 <input placeholder="Email Address" type="email" name="email" id="email-signup">
             </label>
-            <div class="sign_icon"><i class="fa-solid fa-envelope"></i></div>
+           <a href="https://mail.google.com/mail/u/0/#inbox/QgrcJHrjCsmTBNBlKmQHmXtKQKBGWzxkdLv"><div class="sign_icon"><i class="fa-solid fa-envelope"></i></div></a> 
             <button type="submit">SIGN UP</button>
         </form>
     </div>
@@ -376,60 +376,25 @@
 
 
 
-    // Select the form element
     const signupForm = document.getElementById('signup-form');
-
-    // Add a submit event listener to the form
     signupForm.addEventListener('submit', function(event) {
-        // Prevent default form submission (e.g., page refresh)
         event.preventDefault();
-
-        // Get the email input value
         const emailInput = document.getElementById('email-signup');
         const email = emailInput.value.trim();
-
-        // Basic validation
         if (!email) {
             alert('Please enter an email address.');
             return;
         }
-
-        // Optional: Validate email format using a regular expression
         const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (!emailPattern.test(email)) {
             alert('Please enter a valid email address.');
             return;
         }
-
-        // Process the email (e.g., log to console or send to server)
         console.log('Captured email:', email);
 
-        // Optional: Display the email on the page
         const resultDiv = document.createElement('div');
         resultDiv.textContent = `Thank you for signing up with: ${email}`;
         signupForm.appendChild(resultDiv);
-
-        // Optional: Send the email to a server via an API (example)
-        /*
-        fetch('https://your-api-endpoint.com/signup', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ email: email }),
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Server response:', data);
-            alert('Email successfully submitted!');
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('An error occurred while submitting the email.');
-        });
-        */
-
-        // Clear the input field after submission
         emailInput.value = '';
     });
 </script>
